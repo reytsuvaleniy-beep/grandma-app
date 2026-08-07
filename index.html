@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍽 Диета №9</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="hero">
+
+    <h1>🍽 Диета №9</h1>
+
+    <p>
+        Простое руководство по питанию
+    </p>
+
+</header>
+
+<section class="search">
+
+    <input
+        id="search"
+        placeholder="🔍 Найти продукт..."
+        autocomplete="off"
+    >
+
+</section>
+
+<section id="result"></section>
+
+<div class="grid">
+
+<button class="card green" onclick="showCategory('can')">
+✅ Что можно
+</button>
+
+<button class="card red" onclick="showCategory('cant')">
+❌ Что нельзя
+</button>
+
+<button class="card blue" onclick="showMenu()">
+📅 Меню
+</button>
+
+<button class="card orange" onclick="showRecipes()">
+🍲 Рецепты
+</button>
+
+<button class="card purple" onclick="showTips()">
+❤️ Советы
+</button>
+
+<button class="card cyan" onclick="toggleVoice()">
+🔊 Озвучить
+</button>
+
+</div>
+
+<section id="content">
+
+<div class="welcome">
+
+<h2>Добро пожаловать ❤️</h2>
+
+<p>
+
+Нажмите любую кнопку выше или найдите продукт.
+
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+Сделано с ❤️ для любимой бабушки
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

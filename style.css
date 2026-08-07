@@ -1,0 +1,181 @@
+/* ===== СБРОС ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", Arial, sans-serif;
+    background: linear-gradient(180deg, #eefbf2, #ffffff);
+    color: #222;
+    min-height: 100vh;
+}
+
+/* ===== ШАПКА ===== */
+
+.hero {
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.hero h1 {
+    font-size: 52px;
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 22px;
+    opacity: .95;
+}
+
+/* ===== ПОИСК ===== */
+
+.search {
+    padding: 25px;
+}
+
+.search input {
+    width: 100%;
+    padding: 18px 22px;
+    border: none;
+    border-radius: 18px;
+    font-size: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+}
+
+.search input:focus {
+    outline: 3px solid #4CAF50;
+}
+
+/* ===== СЕТКА ===== */
+
+.grid {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+}
+
+/* ===== КНОПКИ ===== */
+
+.card {
+    border: none;
+    border-radius: 20px;
+    padding: 35px 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    transition: .25s;
+    box-shadow: 0 10px 20px rgba(0,0,0,.12);
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.green { background:#43A047; }
+.red { background:#E53935; }
+.blue { background:#1E88E5; }
+.orange { background:#FB8C00; }
+.purple { background:#8E24AA; }
+.cyan { background:#00ACC1; }
+
+/* ===== КОНТЕНТ ===== */
+
+#content,
+#result {
+    margin: 20px;
+}
+
+.welcome,
+.info {
+    background: white;
+    border-radius: 22px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+
+.info h2 {
+    color: #2E7D32;
+    margin-bottom: 15px;
+}
+
+.info ul {
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.info li {
+    margin: 10px 0;
+}
+
+/* ===== КАРТОЧКА ПРОДУКТА ===== */
+
+.product-card {
+    background: white;
+    border-radius: 24px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,.1);
+}
+
+.product-card h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.product-card .status {
+    font-size: 34px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.ok {
+    color: #2E7D32;
+}
+
+.no {
+    color: #D32F2F;
+}
+
+.limit {
+    color: #F57C00;
+}
+
+/* ===== ФУТЕР ===== */
+
+footer {
+    text-align: center;
+    color: #777;
+    padding: 40px;
+    font-size: 18px;
+}
+
+/* ===== МОБИЛЬНЫЕ ===== */
+
+@media (max-width:700px){
+
+.hero h1{
+    font-size:40px;
+}
+
+.hero p{
+    font-size:20px;
+}
+
+.card{
+    font-size:24px;
+    padding:28px;
+}
+
+.search input{
+    font-size:22px;
+}
+
+}
